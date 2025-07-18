@@ -1,0 +1,118 @@
+/*
+style guide 
+
+Primary Accent	Cinnamon Brown	#8B5E3C	- Great for headers, brand, and navigation
+Secondary Accent	Honey Gold	#F4A261	- Use for buttons, highlights, links
+Background	Almond Cream	#FFF8F0	- Light, warm background for body
+Text	Deep Espresso	#3E2723	- High contrast, easy-to-read text color
+Highlight	Strawberry Jam	#D62839	- Use sparingly for call-to-action or testimonials
+
+*/
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem;
+  background-color: #fff8f0;
+  color: #3e2723;
+}
+
+header div {
+  background-color: #f4a261;
+}
+
+.brand {
+  color: #8b5e3c;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 2rem 0rem 1rem;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  background-color: #3e2723;
+  color: #fff;
+  border: #8b5e3c solid 2px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #e76f51;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+aside {
+  flex: 1 1 0;
+  min-width: 0;
+  padding-right: 1rem;
+}
+
+aside ul {
+  list-style: none;
+  padding: 1rem 0rem 0rem 0rem;
+  margin: 0;
+}
+
+aside li {
+  background-color: #f4a261;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #8b5e3c;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 4rem;
+}
+
+aside li:hover {
+  background-color: #e76f51;
+}
+
+article {
+  flex: 9 1 0;
+  min-width: 0;
+  padding-left: 1rem;
+  padding-right: 4rem;
+}
+
+blockquote {
+  font-weight: 600;
+  font-style: italic;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  background-color: #e76f51;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
